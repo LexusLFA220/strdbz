@@ -10,18 +10,33 @@ function TableHeader(){
     </thead>
     )
     }
-function TableBody(){
-
-    return(
-        <tbody></tbody>
-    )
-}
+    const TableBody = (props) => {
+        // used Array.map to create table rows from LinkData passed via props
+        const rows = props.linkData.map((row, index) => {
+        return (
+        <tr key={index}>
+        <td>{row.name}</td>
+        <td>
+        <a href={row.URL}>{row.URL}</a>
+        </td>
+        <td>
+        <button onClick={() => props.removeLink(index)}>Delete</button>
+        </td>
+        </tr>
+        )
+        })
+        
+        return <tbody>{rows}</tbody>
+        }
     
 function Table(){
+    const handleRemove = () => {
+        
+    }
     return(
         <table>
         <TableHeader/>
-        <TableBody/>
+        <TableBody linkData= {[{name: "Goku", URL:"https://dragonball.fandom.com/wiki/Goku"}]} removeLink={handleRemove}/>
         </table>
     )
 }
