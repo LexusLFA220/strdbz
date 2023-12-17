@@ -29,14 +29,14 @@ function TableHeader(){
         return <tbody>{rows}</tbody>
         }
     
-function Table(){
+function Table(props){
     const handleRemove = () => {
         
     }
     return(
         <table>
         <TableHeader/>
-        <TableBody linkData= {[{name: "Goku", URL:"https://dragonball.fandom.com/wiki/Goku"}]} removeLink={handleRemove}/>
+        <TableBody linkData={props.linkData} removeLink={handleRemove}/>
         </table>
     )
 }

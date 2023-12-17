@@ -1,12 +1,14 @@
 function Form(){
     return(
-        <form>
+        <form onSubmit={(event)=>{
+            event.preventDefault()
+        }}>
             <label for="linkName">Fighter Name:</label>
-            <input type="text" id="linkName" name="linkName" value="" />
+            <input type="text" id="linkName" name="linkName" />
             <br />
             <br />
             <label for="URL">Information URL:</label>
-            <input type="text" id="linkURL" name="linkURL" value="" />
+            <input type="text" id="linkURL" name="linkURL"  />
             <br />
             <br />
             <input type="submit" value="Submit"></input>

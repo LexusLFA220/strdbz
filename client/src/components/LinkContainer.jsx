@@ -6,7 +6,7 @@ function LinkContainer(){
         <div>
             <h1>Strongest Dragon Ball Z FighterZ</h1>
             <p>Add your favorite DBZ FighterZ with Fighter and Info to the List Kamehameha!</p>
-            <Table />
+            <Table linkData= {[{name: "Goku", URL:"https://dragonball.fandom.com/wiki/Goku"}]} />
 
             <h1>Add Your New Fighter!</h1>
             <Form />
