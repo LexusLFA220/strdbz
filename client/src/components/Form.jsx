@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-function Form(){
+function Form(props){
     const [name,setName] = useState("")
     const [URL,setURL] = useState("")
 
@@ -18,6 +18,7 @@ function Form(){
         <form onSubmit={(event)=>{
             event.preventDefault()
             console.log(name,URL)
+            props.handleSubmitLink({name, URL})
         }}>
             <label for="linkName">Fighter Name:</label>
             <input type="text" id="linkName" name="linkName" onChange={handleNameChange} />
