@@ -30,13 +30,11 @@ function TableHeader(){
         }
     
 function Table(props){
-    const handleRemove = () => {
-        
-    }
+    
     return(
         <table>
         <TableHeader/>
-        <TableBody linkData={props.linkData} removeLink={handleRemove}/>
+        <TableBody linkData={props.linkData} removeLink={props.removeLink}/>
         </table>
     )
 }
