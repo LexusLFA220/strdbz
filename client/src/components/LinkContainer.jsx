@@ -23,6 +23,8 @@ function LinkContainer(){
 
             <h1>Add Your New Fighter!</h1>
             <Form  handleSubmitLink ={handleSubmit} />
+            <p>New to Dragon Ball Z and don't know any characters click the link below to learn. </p>
+            <a href="https://dragonball.fandom.com/wiki/Category:Characters">Dragon Ball Z Characters Website</a>
         </div>
     )
 
