@@ -25,6 +25,8 @@ function LinkContainer(){
             <Form  handleSubmitLink ={handleSubmit} />
             <p>New to Dragon Ball Z and don't know any characters click the link below to learn. </p>
             <a href="https://dragonball.fandom.com/wiki/Category:Characters">Dragon Ball Z Characters Website</a>
+            <p>Want to watch Dragon Ball Z?</p>
+            <a href="https://www.funimation.com/shows/dragon-ball-z/">Click Here!</a>
         </div>
     )
 
